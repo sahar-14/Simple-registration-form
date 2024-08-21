@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		registration form
+	</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+	<h1>فرم ثبت نام باشگاه ورزشی بانوان</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control" >
+			<label class='font-w' for="name" id="label-name">
+				نام و نام خانوادگی
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="name" class='in'
+				placeholder="نام خود را وارد کنید " />
+		</div>
+
+		<div class="form-control">
+			<label class='font-w' for="email" id="label-email">
+				ایمیل یا شماره تماس
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email" id="email"
+				class='in' placeholder="ایمیل یا شماره تماس خود را وارد کنید " />
+		</div>
+
+		<div class="form-control">
+			<label class='font-w' for="age" id="label-age">
+				سال تولد
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="age"
+				class='in' placeholder="سن خود را وارد کنید " />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role" class='font-w'>کدام گذینه میزان فعالیت ورزشی شما را نشان می دهد؟</label>
+
+			<!-- Dropdown options -->
+			<select class='in' name="role" id="role">
+				<option value="student"> گذینه مورد نظر خود را انتخاب کنید  </option>
+				<option value="intern"> دو یا سه هفته در هفته </option>
+				<option value="professional"> سه یا چهار روز در هفته </option>
+				<option value="other"> بیشتر از پنج روز در هفته </option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label class='font-w'>آیا امکان دارد شما در جلسه با یکی از دوستان خود شرکت کنید ؟</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1" class='padd'>
+				<input type="radio" id="recommed-1"
+					name="recommed">بله
+				</input>
+			</label>
+			<label for="recommed-2" class='padd'>
+				<input type="radio" id="recommed-2"
+					name="recommed">خیر
+				</input>
+			</label>
+			<label for="recommed-3" class='padd'>
+				<input type="radio" id="recommed-3"
+					name="recommed">بستگی دارد
+				</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label class='font-w'>شما سابقه فعالیت در کدام برنامه ورزشی را دارید؟
+				<small>(می توانید چند گزینه را انتخاب کنید)</small>
+			</label>
+
+
+			<!-- Input Type Checkbox -->
+			<label for="inp-1" class='padd'>
+				<input type="checkbox" name="inp">بدنسازی
+				</input>
+			</label>
+			<label for="inp-2" class='padd'>
+				<input type="checkbox" name="inp">تی آر ایکس
+				</input>
+			</label>
+			<label for="inp-3" class='padd'>
+				<input type="checkbox" name="inp">وزنه برداری
+				</input>
+			</label>
+			<label for="inp-4" class='padd'>
+				<input type="checkbox" name="inp">پرتاب وزنه
+				</input>
+			</label>
+			<label for="inp-5" class='padd'>
+				<input type="checkbox" name="inp">هنرهای رزمی
+				</input>
+			</label>
+			<label for="inp-6" class='padd'>
+				<input type="checkbox" name="inp">آمادگی جسمانی
+				</input>
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox" name="inp">سورتمه سواری
+				</input>
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox" name="inp">هاکی روی یخ
+				</input>
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox"  name="inp">دوچرخه سواری
+				</input>
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox" name="inp">اسکیت
+				</input>
+			</label>
+
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox" name="inp">اتومبیل رانی
+				</input>
+			</label>
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox" name="inp">موتور سواری
+				</input>
+			</label>
+			</label>
+			<label for="inp-7" class='padd'>
+				<input type="checkbox" name="inp">طناب زنی
+				</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				انتقاد یا پیشنهاداتنان را برای ما بنویسید:
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+					placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
